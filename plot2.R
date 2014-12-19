@@ -14,5 +14,5 @@ NEI.factored <- rowsum(NEI$Emissions, NEI$year)
 png(file="plot2.png")
 par(bg = "transparent")
 barplot(NEI.factored[,1], names.arg = row.names(NEI.factored),
-        main = "PM 2.5 in Baltimore City, Mariland, ", xlab = "Year", ylab = "Emission")
+        main = "PM 2.5 in Baltimore City, Mariland", xlab = "Year", ylab = "Emission")
 dev.off()
